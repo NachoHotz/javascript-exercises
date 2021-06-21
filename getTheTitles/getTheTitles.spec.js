@@ -12,7 +12,21 @@ describe('getTheTitles', () => {
       }
     ]
 
+    const games = [
+      {
+        title: 'Game',
+        genre: 'Genre'
+      },
+      {
+        title: 'Game2',
+        genre: 'Genre2'
+      }
+    ]
+
   test('gets titles', () => {
     expect(getTheTitles(books)).toEqual(['Book','Book2']);
   });
+  test('gets game titles', () => {
+    expect(getTheTitles(games)).toEqual(['Game', 'Game2']);
+  })
 });
